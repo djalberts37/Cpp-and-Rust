@@ -8,6 +8,7 @@
 [Bb]in
 [Oo]bj
 [Tt]arget
+[Ii]nclude
 
 # VS Code setup
 .vscode/*
