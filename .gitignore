@@ -3,6 +3,7 @@
 #################
 
 [Bb]uild/
+[Bb]uild**
 [Dd]ebug/
 [Rr]elease/
 [Bb]in

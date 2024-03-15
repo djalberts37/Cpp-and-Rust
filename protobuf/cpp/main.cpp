@@ -12,14 +12,11 @@ using namespace grpc;
 int main() {
     std::cout << "Hello World" << std::endl;
 
-    grpc::CreateChannel("localhost:50051", grpc::InsecureChannelCredentials())
-    unique_ptr<gRPCService::Stub> stub = gRPCService::NewStub(channel);
+    auto channel = grpc::CreateChannel("localhost:50051", grpc::InsecureChannelCredentials());
+    
+
 
     helloworld::HelloRequest request;
-    request.setName("True Legends from C++!");
-
-
-
-
-
+    request.set_name("True Legends from C++!");
+    
 }
