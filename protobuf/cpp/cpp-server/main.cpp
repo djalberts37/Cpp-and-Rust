@@ -24,7 +24,7 @@ class MyGreeter final : public Greeter::Service
 
 void RunServer() 
 {
-    string server_address("localhost:50051");
+    string server_address("127.0.0.1:50051");
     MyGreeter service;
 
     ServerBuilder builder;

@@ -13,13 +13,13 @@ using namespace helloworld;
 
 void RunClient() 
 {
-    auto channel = grpc::CreateChannel("localhost:50051", grpc::InsecureChannelCredentials());
+    auto channel = grpc::CreateChannel("127.0.0.1:50051", grpc::InsecureChannelCredentials());
     auto client = Greeter::NewStub(channel);
 
     HelloRequest request;
     HelloReply reply;
     ClientContext context;
-    request.set_name("True Legends from C++!");
+    request.set_name("True Legends IT from C++!");
 
     client->SayHello(&context, request, &reply);
 
