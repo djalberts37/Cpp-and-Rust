@@ -40,4 +40,44 @@ Call CMake to generate the build files:
 cmake -B build_cpp-and-rust -S cpp-and-rust
 ```
 
+Build the entire project:
 
+```
+cmake --build build_cpp-and-rust/
+```
+
+## How to run the targets:
+
+This section outlines how to run the different built targets.
+
+### CPP-CBindgen-Rust
+
+Change directory to `/home/developer/development/build_cpp-and-rust/cpp-cbindgen-rust/` and execute the following statement to run application developed in Cpp which uses Rust library.
+
+```
+./RustAndCpp
+```
+
+### Protobuf
+
+Change directory to `/home/developer/development/build_cpp-and-rust/protobuf/cpp/`. From this directory, both the protobuf cpp server and client can be executed.
+
+```
+<!-- Client -->
+./cpp-client/protobuf-cpp-client
+
+<!-- Server -->
+./cpp-server/protobuf-cpp-server
+```
+
+Change directory to `/home/developer/development/build_cpp-and-rust/protobuf/tonic-rust/debug`. From this directory, both the protobuf rust server and client can be executed.
+
+```
+<!-- Client -->
+./helloworld-client
+
+<!-- Server -->
+./helloworld-server
+```
+
+### Rust-Bindgen-CPP
