@@ -14,6 +14,8 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends apt-utils \
                                                                     cmake \
                                                                     cmake-curses-gui \
                                                                     tig \
+                                                                    clang \
+                                                                    libclang-rt-15-dev \
                                                                     net-tools \
                                                                     less \
                                                                     ca-certificates \
