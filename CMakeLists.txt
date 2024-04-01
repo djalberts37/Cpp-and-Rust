@@ -3,3 +3,4 @@ project(RustAndCpp)
 
 add_subdirectory(cpp-cbindgen-rust)
 add_subdirectory(protobuf)
+add_subdirectory(rust-cpp)
