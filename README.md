@@ -78,4 +78,6 @@ Change directory to `/home/developer/development/build_cpp-and-rust/protobuf/ton
 ./helloworld-server
 ```
 
+(Side note: For more information, about creating a Rust gRPC client and server, take a look at the Rust [Tonic](https://github.com/hyperium/tonic) crate.)
+
 ### Rust-Bindgen-CPP
