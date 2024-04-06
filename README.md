@@ -1,4 +1,4 @@
-# Integration of Rust into CPP
+# Rust meets Cpp
 
 This repository demonstrates integration of Rust components into a C++ project using various techniques, including Foreign Function Interface (FFI) and third-party communication, such as Protocol Buffers. Rust is a powerful system programming language known for its safety features and performance, while C++ is widely used in system-level programming. This README provides instructions for integrating Rust components into a C++ project using different methods.
 
@@ -48,13 +48,17 @@ cmake --build build_cpp-and-rust/
 
 This section outlines how to run the different built targets.
 
-### CPP-CBindgen-Rust
+### CPP-Rust
 
-Change directory to `/home/developer/development/build_cpp-and-rust/cpp-cbindgen-rust/` and execute the following statement to run application developed in Cpp which uses Rust library.
+#### CBindgen
+
+Change directory to `/home/developer/development/build_cpp-and-rust/cpp-rust/cbindgen/` and execute the following statement to run application developed in Cpp which uses Rust library.
 
 ```
-./RustAndCpp
+./cpp-cbindgen-rust
 ```
+
+(Side note: For more information about generating Rust interfacing to Cpp, take a look at [CBindgen](https://github.com/mozilla/cbindgen/blob/master/docs.md) crate.)
 
 ### Protobuf
 
@@ -78,6 +82,26 @@ Change directory to `/home/developer/development/build_cpp-and-rust/protobuf/ton
 ./helloworld-server
 ```
 
-(Side note: For more information, about creating a Rust gRPC client and server, take a look at the Rust [Tonic](https://github.com/hyperium/tonic) crate.)
+(Side note: For more information, about creating a Rust gRPC client and server, take a look at the Rust [Tonic](https://github.com/hyperium/tonic/blob/master/README.md) crate.)
 
-### Rust-Bindgen-CPP
+### Rust-CPP
+
+#### Bindgen
+
+Change directory to `/home/developer/development/build_cpp-and-rust/rust-cpp/bindgen/debug` and execute the following statement to run application developed in Rust which uses Cpp library through generated bindings with bindgen.
+
+```
+./rusty_car_factory
+```
+
+(Side note: For more information about generating Rust interfacing to Cpp, take a look at [Bindgen](https://rust-lang.github.io/rust-bindgen/introduction.html) crate.)
+
+#### Autocxx
+
+Change directory to `/home/developer/development/build_cpp-and-rust/rust-cpp/autocxx/debug` and execute the following statement to run application developed in Rust which uses Cpp library through generated bindings with autocxx.
+
+```
+./cpp-cbindgen-rust
+```
+
+(Side note: For more information about generating Rust interfacing to Cpp, take a look at [Autocxx](https://google.github.io/autocxx/index.html) crate.)
