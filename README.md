@@ -101,7 +101,7 @@ Change directory to `/home/developer/development/build_cpp-and-rust/rust-cpp/bin
 Change directory to `/home/developer/development/build_cpp-and-rust/rust-cpp/autocxx/debug` and execute the following statement to run application developed in Rust which uses Cpp library through generated bindings with autocxx.
 
 ```
-./cpp-cbindgen-rust
+./rust-autocxx-cpp
 ```
 
 (Side note: For more information about generating Rust interfacing to Cpp, take a look at [Autocxx](https://google.github.io/autocxx/index.html) crate.)

@@ -1,5 +1,5 @@
 [package]
-name = "rust-cpp"
+name = "rust-autocxx-cpp"
 version = "0.1.0"
 edition = "2021"
 
