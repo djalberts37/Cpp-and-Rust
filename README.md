@@ -2,6 +2,8 @@
 
 This repository demonstrates integration of Rust components into a C++ project using various techniques, including Foreign Function Interface (FFI) and third-party communication, such as Protocol Buffers. Rust is a powerful system programming language known for its safety features and performance, while C++ is widely used in system-level programming. This README provides instructions for integrating Rust components into a C++ project using different methods.
 
+(Side not: The presentation of the meetup can be found [here](doc/PPT%20C++%20RUST.pdf))
+
 ## Requirements
 
 - [Visual Studio Code](https://code.visualstudio.com/) \
